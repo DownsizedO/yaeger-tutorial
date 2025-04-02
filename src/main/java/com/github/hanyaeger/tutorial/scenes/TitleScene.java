@@ -37,13 +37,13 @@ public class TitleScene extends StaticScene {
         addEntity((waterworldText));
 
 
-        var StartButton = new StartButton(
-                new Coordinate2D(getWidth()/2, getHeight() - 100), "start"
+        var startbutton = new com.github.hanyaeger.tutorial.scenes.StartButton(
+                new Coordinate2D(getWidth()/2, getHeight() - 500), "start", waterworld
         );
-        StartButton.setAnchorPoint(AnchorPoint.CENTER_CENTER);
-        StartButton.setFill(Color.BLUE);
-        StartButton.setFont(Font.font("Roboto", FontWeight.SEMI_BOLD, 80));
-        addEntity((StartButton));
+        startbutton.setAnchorPoint(AnchorPoint.CENTER_CENTER);
+        startbutton.setFill(Color.BLUE);
+        startbutton.setFont(Font.font("Roboto", FontWeight.SEMI_BOLD, 100));
+        addEntity((startbutton));
     }
 
 
